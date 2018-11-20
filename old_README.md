@@ -40,7 +40,7 @@ them in sequence
 * Threads will need to signal that they have completed their task
 * Threads must process all frames of the video exactly once
 * Frames will be communicated between threads using producer/consumer idioms
-  * Producer/consumer quesues will be bounded at ten frames
+  * Producer/consumer queues will be bounded at ten frames
 
 Note: You may have ancillary objects and method in order to make you're code easer to understand and implement.
 

@@ -1,0 +1,17 @@
+* Producer Consumer lab
+  This lab required to implent a program that would take, conver and display a vidio which would be done using threads in a asyncrounous way
+* requirements
+  the lab requires the image has 3 ways to implement
+  - extract the frame from a file
+  - convert each frame to grayscale
+  - display the image 
+* implementations
+    My aproach was to take the image and put every step on a thread and running
+  them simlutatiously. the problem is that the process uses the same data which
+  would cause a race condition.
+    Using semaphores for an aproach on producer consumer for each of the 
+  steps. The steps  would behave as a producer and a consumer at the same
+  time. Using a semaphore for handling converted frames into grayscale.
+  and a semaphore for handling the displaying the "grayscaled" image.
+* works cited
+  Wikipedia article specifing producer-consumer algorithm. 

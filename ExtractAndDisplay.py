@@ -71,7 +71,6 @@ filename = 'clip.mp4'
 
 # shared queue  
 extractionQueue = queue.Queue()
-
 # extract the frames
 extractFrames(filename,extractionQueue)
 
